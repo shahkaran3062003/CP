@@ -1,3 +1,5 @@
+// https://www.codechef.com/problems/C_RATING
+
 #include <iostream>
 using namespace std;
 

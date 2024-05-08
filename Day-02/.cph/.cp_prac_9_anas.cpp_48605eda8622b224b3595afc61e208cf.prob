@@ -1,0 +1,1 @@
+{"name":"Local: cp_prac_9_anas","url":"d:\\mca\\CP\\Day-02\\cp_prac_9_anas.cpp","tests":[{"id":1715104460969,"input":"3\n100 200\n200 100\n200 500","output":"ANY\nFIRST\nSECOND"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mca\\CP\\Day-02\\cp_prac_9_anas.cpp","group":"local","local":true}

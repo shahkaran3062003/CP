@@ -1,0 +1,1 @@
+{"name":"Local: cp_prac_11_vanda","url":"d:\\mca\\CP\\Day-02\\cp_prac_11_vanda.cpp","tests":[{"id":1715105367441,"input":"1\n1","output":"NOT READY"},{"id":1715105371766,"input":"1\n2","output":"READY FOR BATTLE"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mca\\CP\\Day-02\\cp_prac_11_vanda.cpp","group":"local","local":true}
