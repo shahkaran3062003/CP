@@ -1,0 +1,1 @@
+{"name":"Local: cp_prac_8_vanda","url":"d:\\mca\\CP\\Day-03\\cp_prac_8_vanda.cpp","tests":[{"id":1715187987118,"input":"3\n1 10\n1 5\n4 9","output":"10\n-1\n8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mca\\CP\\Day-03\\cp_prac_8_vanda.cpp","group":"local","local":true}

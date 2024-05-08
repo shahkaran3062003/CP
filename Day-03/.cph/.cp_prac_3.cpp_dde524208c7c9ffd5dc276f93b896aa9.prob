@@ -1,0 +1,1 @@
+{"name":"Local: cp_prac_3","url":"d:\\mca\\CP\\Day-03\\cp_prac_3.cpp","tests":[{"id":1715169147224,"input":"5 \n3 \n4\n5\n20\n0","output":"6\n24\n120\n2432902008176640000\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mca\\CP\\Day-03\\cp_prac_3.cpp","group":"local","local":true}
