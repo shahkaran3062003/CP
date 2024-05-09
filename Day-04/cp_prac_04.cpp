@@ -1,4 +1,4 @@
-// https : // www.codechef.com/problems/BLACKJACK
+// https://cses.fi/problemset/task/1090/
 
 #include <bits/stdc++.h>
 
@@ -63,16 +63,32 @@ void __f(const char *names, Arg1 &&arg1, Args &&...args)
 const int N = 200005;
 void solve()
 {
-    int a, b;
-    cin >> a >> b;
-    if ((a + b) <= 10)
+    int n, x;
+    cin >> n >> x;
+
+    int *arr = new int[n];
+    LOOP(n)
     {
-        cout << -1 << endl;
+        cin >> arr[i];
     }
-    else
+    sort(arr, arr + n);
+    int s = 0, e = n - 1;
+    int count = 0;
+    while (s <= e)
     {
-        cout << 21 - (a + b) << endl;
+
+        if (arr[s] + arr[e] <= x)
+        {
+            s++;
+            e--;
+        }
+        else
+        {
+            e--;
+        }
+        count++;
     }
+    cout << count << endl;
 }
 
 int32_t main()
@@ -88,10 +104,10 @@ int32_t main()
 
     clock_t z = clock();
 
-    int t = 1;
-    cin >> t;
-    while (t--)
-        solve();
+    // int t = 1;
+    // // cin >> t;
+    // while(t--)
+    solve();
 
     cerr << "Run Time : " << ((double)(clock() - z) / CLOCKS_PER_SEC);
 

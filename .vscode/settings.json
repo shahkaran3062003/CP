@@ -3,6 +3,7 @@
         "*.html": "html",
         "ostream": "cpp",
         "random": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "xstddef": "cpp"
     }
 }

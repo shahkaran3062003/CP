@@ -65,14 +65,24 @@ void solve()
 {
     int a, b, x, y;
     cin >> a >> b >> x >> y;
-    if ((a == x) || (b == y))
-    {
-        cout << 2 << endl;
-    }
-    else
+
+    if ((a != x) && (b != y))
     {
         cout << 1 << endl;
     }
+    else
+    {
+        cout << 2 << endl;
+    }
+
+    // if ((a == x) || (b == y))
+    // {
+    //     cout << 2 << endl;
+    // }
+    // else
+    // {
+    //     cout << 1 << endl;
+    // }
 }
 
 int32_t main()

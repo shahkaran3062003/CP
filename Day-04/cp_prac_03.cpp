@@ -1,4 +1,4 @@
-// https : // www.codechef.com/problems/BLACKJACK
+// https : // cses.fi/problemset/task/1084
 
 #include <bits/stdc++.h>
 
@@ -63,16 +63,47 @@ void __f(const char *names, Arg1 &&arg1, Args &&...args)
 const int N = 200005;
 void solve()
 {
-    int a, b;
-    cin >> a >> b;
-    if ((a + b) <= 10)
+    int n, m, k;
+    cin >> n >> m >> k;
+    int *appr = new int[n];
+    int *apt = new int[m];
+
+    LOOP(n)
     {
-        cout << -1 << endl;
+        cin >> appr[i];
     }
-    else
+    LOOP(m)
     {
-        cout << 21 - (a + b) << endl;
+        cin >> apt[i];
     }
+
+    sort(appr, appr + n);
+    sort(apt, apt + m);
+
+    int p1, p2;
+    p1 = p2 = 0;
+    int count = 0;
+    // int diff = -1;
+    while (p1 < n && p2 < m)
+    {
+
+        if ((appr[p1] >= apt[p2] - k) && (appr[p1] <= apt[p2] + k))
+        {
+            count++;
+            p1++;
+            p2++;
+        }
+
+        else if (appr[p1] < apt[p2])
+        {
+            p1++;
+        }
+        else if (appr[p1] > apt[p2])
+        {
+            p2++;
+        }
+    }
+    cout << count << endl;
 }
 
 int32_t main()
@@ -88,10 +119,11 @@ int32_t main()
 
     clock_t z = clock();
 
-    int t = 1;
-    cin >> t;
-    while (t--)
-        solve();
+    // int t = 1;
+    // // cin >> t;
+    // while(t--)
+
+    solve();
 
     cerr << "Run Time : " << ((double)(clock() - z) / CLOCKS_PER_SEC);
 

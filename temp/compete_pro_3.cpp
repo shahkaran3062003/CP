@@ -1,5 +1,3 @@
-// https : // www.codechef.com/problems/BLACKJACK
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -63,16 +61,40 @@ void __f(const char *names, Arg1 &&arg1, Args &&...args)
 const int N = 200005;
 void solve()
 {
-    int a, b;
-    cin >> a >> b;
-    if ((a + b) <= 10)
+    int n;
+    cin >> n;
+    int *arr = new int[n];
+    int count = 0;
+    LOOP(n)
     {
-        cout << -1 << endl;
+        cin >> arr[i];
     }
-    else
+
+    int mul = 0;
+    for (int i = 0; i < n; i++)
     {
-        cout << 21 - (a + b) << endl;
+        mul = arr[i];
+        if (arr[i] == 1)
+        {
+            count += n;
+            continue;
+        }
+
+        for (int j = 0; j < n; j++)
+        {
+            if (mul > (LLONG_MAX / arr[i]))
+            {
+
+                break;
+            }
+            if (mul <= arr[j])
+            {
+                count++;
+            }
+            mul *= arr[i];
+        }
     }
+    cout << count << endl;
 }
 
 int32_t main()

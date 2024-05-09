@@ -1,5 +1,3 @@
-// https : // www.codechef.com/problems/BLACKJACK
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -60,19 +58,58 @@ void __f(const char *names, Arg1 &&arg1, Args &&...args)
     __f(comma + 1, args...);
 }
 
+int getMin(int a, int b)
+{
+    return ((a < b) ? a : b);
+}
+
 const int N = 200005;
 void solve()
 {
-    int a, b;
-    cin >> a >> b;
-    if ((a + b) <= 10)
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
+
+    int a = 0, c = 0;
+    int st, ed;
+    int ans = 0;
+
+    for (int i = 0; i < n - 1; i++)
     {
-        cout << -1 << endl;
+        if (s[i] == 'b')
+        {
+
+            st = i - 1;
+            ed = i + 1;
+
+            a = 0;
+            c = 0;
+            while (st >= 0 && ed < n && s[st] != 'b' && s[ed] != 'b')
+            {
+                if (s[st] == 'a')
+                    a++;
+                if (s[ed] == 'c')
+                    c++;
+                st--;
+                ed++;
+            }
+            while (st >= 0 && s[st] != 'b')
+            {
+                if (s[st] == 'a')
+                    a++;
+                st--;
+            }
+            while (ed < n && s[ed] != 'b')
+            {
+                if (s[ed] == 'c')
+                    c++;
+                ed++;
+            }
+            ans += getMin(a, c);
+        }
     }
-    else
-    {
-        cout << 21 - (a + b) << endl;
-    }
+    cout << ans << endl;
 }
 
 int32_t main()

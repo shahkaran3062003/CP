@@ -1,0 +1,1 @@
+{"name":"Local: cp_prac_04","url":"d:\\mca\\CP\\Day-04\\cp_prac_04.cpp","tests":[{"id":1715258101813,"input":"10 10\n10 9 7 10 9 8 5 6 6 5","output":"9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mca\\CP\\Day-04\\cp_prac_04.cpp","group":"local","local":true}
