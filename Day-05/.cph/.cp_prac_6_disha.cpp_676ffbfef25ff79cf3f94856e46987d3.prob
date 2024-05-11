@@ -1,0 +1,1 @@
+{"name":"Local: cp_prac_6_disha","url":"d:\\mca\\CP\\Day-05\\cp_prac_6_disha.cpp","tests":[{"id":1715364045699,"input":"4\n100 25 40\n100 29 45\n46 1 2\n78 15 78","output":"4\n3\n45\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\mca\\CP\\Day-05\\cp_prac_6_disha.cpp","group":"local","local":true}
